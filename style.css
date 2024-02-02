@@ -1,0 +1,121 @@
+@font-face{
+    font-family: myfont;
+    src:url("anchor.ttf");
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: myfont;
+    color:white;
+}
+#head{
+    color:#F64C72;
+    padding-top:10px;
+    font-size:4rem;
+    margin-left:400px;
+}
+#main{
+    background-color:#242582;
+    width:100%;
+    height:600px;
+}
+.sections{
+    display:inline-block;
+    border:2px solid #F64C72;
+    border-radius:15px;
+    height:400px;
+    width:380px;
+    margin-top:50px;
+}
+#left{
+    position: relative;
+    float:left;
+    margin-left:280px;
+}
+#left h1{
+    position: absolute;
+    top:0px;
+    left:140px;
+}
+#left span{
+    padding:10px 0px 10px 20px;
+    height:310px;
+    width:300px;
+    position:absolute;
+    top:48px;
+    left:40px;
+    border:2px solid white;
+    border-radius:15px;
+}
+#screen{
+    font-size:2rem;
+}
+#right{
+    position: relative;
+    padding:10px;
+    padding-top:30px;
+    float:right;
+    margin-right:300px;
+}
+#right h1{
+    position: absolute;
+    top:0px;
+    left:140px;
+}
+.form-div{
+    /* border:2px solid white; */
+    padding:10px;
+}
+.form{
+    position: relative;
+    padding:10px;
+}
+.textbox{
+    font-size:1.5rem;
+    border:2px solid white;
+    border-radius:10px;
+    outline:none;
+    padding:10px;
+    background: none;
+    height:50px;
+    width:300px;
+}
+.label{
+    background-color: #242582;
+    cursor:text;
+    font-size:1.5rem;
+    position: absolute;
+    left:20px;
+    top:19px;
+    transition: top 300ms ease-in, padding 300ms ease-in, font-size 300ms ease-in;
+}
+.textbox:focus{
+    border-color:#F64C72;
+}
+.textbox:focus ~ .label,
+.textbox:not(:placeholder-shown).textbox:not(:focus)~.label
+{
+    padding:3px;
+    font-size:1rem;
+    top:-1px;
+}
+#button{
+    color:#F64C72;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-left:110px;
+    background: none;
+    outline:none;
+    border: 2px solid #F64C72;
+    border-radius:10px;
+    padding:5px;
+    font-size:1.5rem;
+    cursor: pointer;
+    transition:font-size 500ms, padding 500ms;
+}
+#button:hover{
+    color:white;
+
+}
+
